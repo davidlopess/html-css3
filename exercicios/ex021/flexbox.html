@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container{
+            background-color: rgba(138, 138, 156, 0559);      
+            padding-top: 20px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            flex-wrap: wrap;
+            align-content:center;
+            row-gap: 10px;
+            column-gap: 10px;
+          
+           
+        }
+        
+
+
+
+
+        .bloco-1{
+            background-color: rgba(0, 0, 255, 0.559);
+            padding: 50px;
+            width: 50px;
+            text-align: center;
+            height: 30px;
+        }
+        .bloco-2{
+            background-color: rgba(255, 0, 0, 0.559);
+            padding: 50px;
+            width: 50px;
+            text-align: center;
+            height: 30px;
+        }
+        .bloco-3{
+            background-color: rgba(255, 234, 0, 0.559);
+            padding: 50px;
+            width: 50px;
+            text-align: center;
+            height: 30px;
+       
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco-1">01</div>
+        <div class="bloco-2">02</div>
+        <div class="bloco-3">03</div>
+        <div class="bloco-1">01</div>
+        <div class="bloco-2">02</div>
+        <div class="bloco-3">03</div>
+        <div class="bloco-1">01</div>
+        <div class="bloco-2">02</div>
+        <div class="bloco-3">03</div>
+        <div class="bloco-1">01</div>
+        <div class="bloco-2">02</div>
+        <div class="bloco-3">03</div>  
+        
+
+    </main>
+    
+</body>
+</html>
+
+<!--
+  01) display: flax;
+
+  Para identificar que a tag vai ser o elemento container do flexbox.
+  =====================================================================
+  02) flex-direction: ;
+
+  Para dizer qual vai ser a direção do eixo principal.
+  =====================================================================
+
+  03) justify-content:;
+
+  Para alinahr os elementos no eixo principal.
+  =====================================================================
+
+  04) align-items:;
+
+  Para alinahar os elementos no eixo perpedicular.
+  =====================================================================
+
+  05) flex-wrap:;
+   
+  Para decidir se os elementos irão para a linha de baixo quando 
+  chegarem no final ou se ficarão espremidos.
+  =====================================================================
+
+  06) flex-flow:;
+
+  Para identificar o flex-direction e o flex-wrap de uma vez só.
+  =====================================================================
+
+  07) align-content:;
+
+  Para quando exite o flex-wrap e queremos alinhar as linhas no nosso 
+  eixo perpendicular.
+  =====================================================================
+
+  08) gap, row-gap e colum-gap
+
+  Para fixar algum tamanho no espaço entre os elementos.
+
+  sejam eles lado a lado ou entre eles em cada linha.
+
+-->

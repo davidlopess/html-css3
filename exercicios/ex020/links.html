@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+        a{
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bolder;
+            
+        }
+        a:visited{
+            color: cadetblue;
+        }
+        a:hover{
+            color: rgba(95, 158, 160, 0.665);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        a::before{
+                content:'☛';
+                color: rgb(230, 108, 43);
+            }
+
+            a::after{ 
+                content:'☚';
+                color: brown;
+            }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://classroom.google.com/u/0/c/NjAxMTIyMDA2MTIx?hl=pt-BR" target="_blank">Pagina do facebook</a></li>
+        <li><a href="https://web.whatsapp.com/" target="_blank">Canal do yotube</a></li>
+        <li><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001561%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIoLPA9K_jgwMVY2NIAB3JVAM1EAAYASAAEgI1XfD_BwE" target="_blank">repositorio linkedin</a></li>
+    </ul>
+    
+</body>
+</html>
+<!--
+TIPOS DE CAIXAS
+
+ BOX-LEVEL
+  Sempre que uma caixa vai começar ele quebar para outra linha e começa o paragrafo, ou seja ele se torna independente..
+
+  TAG BOX-LEVEL:
+     -- <div> --
+ ==================================================
+  ILINE-LEVEL
+
+  Sempre que uma caixa vai começar, ele  não quebra a linha , ele continua na mesma linha ocupando o espaço nesseçario para ele, e continua o conteudo na mesma linha.
+
+  TAG ILINE-LEVEL:
+
+    --<span>--
+
+-->

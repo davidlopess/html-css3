@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0,,0 initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: darkgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px  solid black;
+            margin-bottom: 5px;
+        }
+        div:hover{
+            background-color: chartreuse;
+          
+        }
+    </style>
+    <!--
+        -> PSEUDO-CLASSES <-
+        As pseudo-classes são representadas por dois pontos (:)
+        exemplos de pseudo-classes
+        
+
+    HOVER -> vc configurando essa pseudo-classe , ela só vai funcionar quando passar o muse por cima do elemento em que ela foi adicionado.
+
+        div:hover{
+
+        }
+
+    VISITED -> essa pseudo-classe serve para destacar links dentro do seu sites que ja foram visitados..
+
+    :visited {
+        color: red; -> vai mudar a cor do site que ja foi visitdo
+    }
+
+    ACTIVE -> deixa o linque que vc clicou com a cor que vc escolher para ficar no click
+    -->
+
+
+    <!--
+        PCEUDO-ELEMENTO
+          
+          Para utilizar esse pseudo-elemento vc precisa utilisar quatro pontos. -> (::) 
+             Esse pseudo é para adicionar sibolos, links e outars coisas no seu site
+          EXEMPLO:
+
+            ::before{-> antes
+                content:'[link]';
+            }
+
+            ::after{ -> depois
+                content:'[link]'
+            }
+
+    -->
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>
+

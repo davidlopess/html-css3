@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+        body{
+            background-color: aqua;
+            font-family: Arial;
+            font-size: 20px;
+            text-align: justify;
+        }
+        h1{
+            color: red;
+            text-decoration: underline;
+        }
+        h2{
+            color: rgb(0, 119, 255);
+        }
+        p{
+            background-color: rgba(209, 208, 206, 0.43);
+            padding: 20px;
+        }
+        .link{
+            color: rgb(8, 41, 118);
+            text-align:right;
+            
+        }
+    
+        
+  

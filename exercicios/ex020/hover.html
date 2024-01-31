@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{
+            color: red;
+            
+        }
+        div > button{
+            display: none;
+        }
+        div:hover > button{
+            display:block;
+            background-color: red;
+            color: white;
+            width: 180px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            font-weight: bolder;
+            border: 1px  solid rgba(109, 39, 39, 0.353) ;
+            box-shadow: 1px 1px 3px black;
+           margin-top: 10px  ;
+
+            
+        }
+        div:hover > button > a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>
+        Passe o mouse aqui
+        <button><a href="https://web.whatsapp.com/">TEXTO ESCONDIDO</a></button>
+        
+    </div>
+    <P>Fim de exemplo</P>
+</body>
+</html>
