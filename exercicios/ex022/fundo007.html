@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        section{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: blueviolet;
+            height:93vh;
+            padding: 10px;
+            position: relative;
+        }
+        article{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <!-- Para alinhar um conteudo verticalmente vc precisa utilizar algumas propiedades especiais!
+    São elas::
+
+    coloque a propiedade > (position: relative) dentro do seu conteiner, e depois 
+    coloque a propiedade > (position: absolut;) na div dentro do seu container. Agora sim vc vai poder utilizar as propiedades (Left e Top) na sua dive, para movimentala , e para sentralisar essa dive utiliza-se a propiedade: (transform: translat();)- Esse transform  vai permitirrr que vc mova sua div dentro do seu container. 
+    ex:
+
+    container{
+        position: relative;
+    }
+
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transforme: translate(-50%, -50%);
+    }
+ -->
+
+    
+</head>
+<body>
+    <section>
+        <article>
+
+        </article>
+    </section>
+    
+</body>
+</html>
