@@ -7,16 +7,66 @@
 </head>
 <body>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        
+        }
         table{
             border-collapse: collapse;
+            width: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+           border-left: 2px solid, zxlinear-gradient(to left, red, yellow);
+            
             
         }
-        tr td{
-            border: 1px solid black;
+        tbody tr:nth-child(odd){
+            background-color: rgba(100, 116, 110, 0.479);
         }
-        .posiçao{
+        thead th{
+            background-color: rgb(88, 86, 84);
+            color: aliceblue;  
+
+        }
+        .dados{
             text-align: center;
-            width: 50px;
+        }
+     
+        .DESTAQUE{
+            text-align: center;
+            background-color: rgb(244, 244, 4);
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+        }
+        .DESTAQUE1{
+            background-color: rgb(244, 244, 4);
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+
+        }
+        tr, th{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        tr, td{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        
+        tfoot th{
+            background-color: rgb(53, 52, 50);
+            color: aliceblue;          
+        }
+        caption{
+            padding: 10px;
+            color: aliceblue;
+            font-weight: bolder;
+            background-color: rgba(94, 69, 50, 0.92);
         }
 
 
@@ -25,89 +75,154 @@
     
     <!-- 
         ANATOMIA PARA TABELAS GRANDES!
-
+        CAPTION -> LEGENDA DA TABELA
         THEAD -> CABEÇA
         TBODY -> CORPO
         TFOOT ->  RODAPÉ
+
+        pseudo classe:
+        :nth-child(2n) -serve para fazer o efeito zebrado na sua tabela
      -->
 <table>
+    <caption>População federativa do Brasil</caption>
     
          <thead>
             <tr>
-                <td>Posição</td>
-                <td>Unidade Federativa</td>
-                <td>População</td>
-                <td>% da pop.total</td>
+             
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th scope="col
+                ">% da pop.total</th>
             </tr>
     
          </thead>
     
          <tbody>
             <tr>
-                <td class="posiçao">1</td>
+            
                 <td>São Paulo</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">2</td>
+             
                 <td>Minas Gerais</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">3</td>
+              
                 <td>Ceará</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">4</td>
+             
                 <td>Rio de Janeiro</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">5</td>
-                <td>Fortaleza</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                
+                <td class="DESTAQUE1">Fortaleza</td>
+                <td class="DESTAQUE">52 526 624 </td>
+                <td class="DESTAQUE">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">6</td>
+               
                 <td>Bahia</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr >
-                <td class="posiçao">7</td>
+              
                 <td>Belo Horizonte</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr >
-                <td class="posiçao">8</td>
+               
                 <td>Cururupu</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr >
-                <td class="posiçao">9</td>
+                
                 <td>Piauí</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
             <tr>
-                <td class="posiçao">10</td>
+                
                 <td>Belém</td>
-                <td>52 526 624 </td>
-                <td>32%</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
             </tr>
+
+            <tr>
+            
+                <td>São Paulo</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr>
+             
+                <td>Minas Gerais</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr>
+              
+                <td>Ceará</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr>
+             
+                <td>Rio de Janeiro</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr>
+                
+                <td class="DESTAQUE1">Fortaleza</td>
+                <td class="DESTAQUE">52 526 624 </td>
+                <td class="DESTAQUE">32%</td>
+            </tr>
+            <tr>
+               
+                <td>Bahia</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr >
+              
+                <td>Belo Horizonte</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+            <tr >
+               
+                <td>Cururupu</td>
+                <td class="dados">52 526 624 </td>
+                <td class="dados">32%</td>
+            </tr>
+         
+          
+
+         
+     
+
+   
+ 
+    
     
          </tbody>
          <tfoot>
             <tr >
-                <td >Dados demograficos dos estados Brasileiros</td>
+                <th >Dados demograficos </th>
+                <th>644 643 534</th>
+                <th>95%</th>
             </tr>
     
          </tfoot>
