@@ -13,12 +13,9 @@
         
         }
         table{
+            position: relative;
             border-collapse: collapse;
-            width: 500px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            width: 500px;      
            border-left: 2px solid, zxlinear-gradient(to left, red, yellow);
             
             
@@ -30,6 +27,10 @@
             background-color: rgb(88, 86, 84);
             color: aliceblue;  
 
+        }
+        thead tr th {
+            position: sticky;
+            top: 0;
         }
         .dados{
             text-align: center;
