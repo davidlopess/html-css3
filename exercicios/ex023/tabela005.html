@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+           border-collapse: collapse;
+            width: 500px;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        
+        .cnome{
+            background-color: red;
+        }
+
+        .cprofição{
+          background-color: rgb(0, 238, 255);
+        }
+
+         .cidade{
+            background-color: chartreuse;
+         }
+       
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+   <table>
+    <colgroup>
+        <col class="cnome" span="2">
+        <col class="cidade">
+        <col class="cprofição">
+     
+       
+    </colgroup>
+          
+
+    <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profição</th>
+    </tr>
+    <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>Pedro</td>
+        <td>M</td>
+        <td>29</td>
+        <td>Jogador</td>
+    </tr>
+    <tr>
+        <td>Ricardo</td>
+        <td>M</td>
+        <td>31</td>
+        <td>ferreiro</td>
+    </tr>
+    <tr>
+        <td>Gabriela</td>
+        <td>F</td>
+        <td>35</td>
+        <td>Empresaria</td>
+    </tr>
+    <tr>
+        <td>Rita de Cassia</td>
+        <td>F</td>
+        <td>21</td>
+        <td>Estudante</td>
+    </tr>
+    <tr>
+        <td>David Lopes </td>
+        <td>M</td>
+        <td>22</td>
+        <td>Progamador</td>
+    </tr>
+    <tr>
+        <td>Maria Vitoria</td>
+        <td>F</td>
+        <td>19</td>
+        <td>Mãe</td>
+    </tr>
+    <tr>
+        <td>Guilherme</td>
+        <td>M</td>
+        <td>27</td>
+        <td>Mecânico</td>
+    </tr>
+   </table>
+
+   <!-- 
+    Para destacar uma coluna de sua tabela com uma cor diferente vc pode utilizar o Seguinte parametro: ( <colgroup> -> e dentro de (colgroup) utiliza-se ( col "defini que é uma coluna")
+        EXEMPLO:
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>      -> *cada Col representa uma coluna* 
+        </colgroup>
+
+
+         <colgroup> )
+    -->
+
+    
+</body>
+</html>
