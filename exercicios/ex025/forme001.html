@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="ENVIA">
+    </form>
+    
+</body>
+</html>
+<!-- 
+ TRABALHANDO COM FORMULARIOS==========
+
+  Todo formulario tem que estar dentro da tag ( <form> 
+
+  </form>
+  )
+
+  Para desativar o nome que é sugerido na caixa de formulario
+  vc precisa colocar um (autocomplete="off") -> na parte inicial do seu form.
+
+  EX:
+  <form autocomplete="off">
+
+
+    == LABEL==
+     o (label) vai ligar o nome que se refere a ser colocado dentro da caixa do (input)
+
+-->
