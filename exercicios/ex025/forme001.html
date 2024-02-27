@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Meu primeiro Formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="off" method="post">
         <p><label for="inome">Nome:</label>
             <input type="text" name="Nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label>
@@ -34,5 +34,17 @@
 
     == LABEL==
      o (label) vai ligar o nome que se refere a ser colocado dentro da caixa do (input)
+
+     METODOS (GET e POST) PARA SEGURANÇA DE FORMULARIO:::
+
+     GET -> Esse metodo vem padrão no formulario,"mostra os dados na URL."
+
+     POST -> Esse metodo não mostra os seus dados na URL, mais isso não quer dizer que estar protegido, pois vc ainda pode encontrar os dados em 'inspencionar'. 
+      e para utilizar esses metodos vc precisa usar o parametro "method".
+     ex:: 
+     <form method="get ou post">
+      
+     </form>
+      
 
 -->
