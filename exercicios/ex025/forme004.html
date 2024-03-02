@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulario</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        fieldset{
+            width: 300px;
+            height: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        legend{
+            text-align: center;
+            font-style:italic;
+            font-variant: small-caps;
+            text-transform: uppercase;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            
+        }
+        div{
+            margin-bottom: 20px;
+            width: 100px;
+            margin-left: 20px;
+           
+
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+
+        
+        
+        .buton{
+            
+            margin-top: 20px;
+            display: flex;
+           justify-content: space-between;
+           
+        }
+
+        .buton input{
+            margin-left: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.226);
+            padding: 8px;
+            border-radius: 50px;
+            color: white;
+            background-color: rgb(2, 46, 46);
+           
+           
+           
+        }
+     
+    
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com formulario</h1>
+    <fieldset>
+        <legend>Campo de formulario</legend>
+        <form action="cadastro01.html">
+            <div>
+                <label for="i-nome">Nome</label>
+                <input type="text" name="nome" id="i-nome">
+            </div>
+            <div>
+                <label for="e-email">E-mail</label>
+                <input type="email" name="email" id="e-email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="tele">Telefone</label>
+                <input type="tel" name="tel " id="tele" required autocomplete="tel" >
+            </div>
+            <div class="buton">
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </div>
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
+
+<!-- 
+ TRABALHANDO COM FORMULARIOS==========
+
+  Todo formulario tem que estar dentro da tag ( <form> 
+
+  </form>
+  )
+
+  Para desativar o nome que é sugerido na caixa de formulario
+  vc precisa colocar um (autocomplete="off") -> na parte inicial do seu form.
+
+  EX:
+  <form autocomplete="off">
+
+
+    == LABEL==
+     o (label) vai ligar o nome que se refere a ser colocado dentro da caixa do (input)
+
+     METODOS (GET e POST) PARA SEGURANÇA DE FORMULARIO:::
+
+     GET -> Esse metodo vem padrão no formulario,"mostra os dados na URL."
+
+     POST -> Esse metodo não mostra os seus dados na URL, mais isso não quer dizer que estar protegido, pois vc ainda pode encontrar os dados em 'inspencionar'. 
+      e para utilizar esses metodos vc precisa usar o parametro "method".
+     ex:: 
+     <form method="get ou post">
+      
+     </form>
+
+
+     TIPOS DE INPUTS PARA FORMULARIOS::
+
+     password - senha
+     reset- limpar
+     submit - botão
+     required- obrigatorio (SEMPRE QUE FOR UM VALOR OBRIGATORIO DENTRO DO SEU FORMULARIO)
+
+
+     minlength="" - minhimo de letra obrigatorio
+
+     maxlength="" - maximo de letras obigatorio
+
+     placeholder - o nome que fica na caixa 
+     indicado o que é pra escrever.
+
+     nunber - input que aceita só numero.
+
+     step - indica de quanto em quanto o numero é valido.
+
+     month - calendario
+
+     date - data
+
+     time - hora
+
+     tel- telefone
+
+     pattern - padrão {expreção regular} -> vc so vai poder adicionar o valor padrão exigido pelo (pattern ) ex: 
+     pattern="^d\{4,5}-d\{5}$"
+     
+==========================================================================
+
+    fieldset - cria uma caixa que agrupa todo o formulario 
+    legend - cria o nome de uma legenda na caixa
+-->
