@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Formulario</title>
+    <h1>
+        estudando formulario
+    </h1>
+    <form action="cadastro.html">
+        <label for="e-estado"> Selecione seu estado</label>
+        <select name="estado" id="e-estado">
+            <optgroup label="Região Norte">
+                <option value="MA">Maranhão</option>
+                <option value="RJ">Rio de Janeiro<option>
+            </optgroup>
+            <optgroup label="Região Oeste">
+                <option value="Mg">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+        </select>
+      </optgroup>
+       <div>
+            <label for="e-prof">Profição</label>
+            <input type="text" name="prof" id="e-prof" list="listprof">
+            <datalist id="listprof">
+               
+                    <option >Professor</option>
+                    <option >Professor</option>
+                    <option >Professor</option>
+                    <option >Professor</option>
+                
+
+
+            </datalist>
+        </div>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!-- 
+ TRABALHANDO COM FORMULARIOS==========
+
+  Todo formulario tem que estar dentro da tag ( <form> 
+
+  </form>
+  )
+
+  Para desativar o nome que é sugerido na caixa de formulario
+  vc precisa colocar um (autocomplete="off") -> na parte inicial do seu form.
+
+  EX:
+  <form autocomplete="off">
+
+
+    == LABEL==
+     o (label) vai ligar o nome que se refere a ser colocado dentro da caixa do (input)
+
+     METODOS (GET e POST) PARA SEGURANÇA DE FORMULARIO:::
+
+     GET -> Esse metodo vem padrão no formulario,"mostra os dados na URL."
+
+     POST -> Esse metodo não mostra os seus dados na URL, mais isso não quer dizer que estar protegido, pois vc ainda pode encontrar os dados em 'inspencionar'. 
+      e para utilizar esses metodos vc precisa usar o parametro "method".
+     ex:: 
+     <form method="get ou post">
+      
+     </form>
+
+
+     TIPOS DE INPUTS PARA FORMULARIOS::
+
+     password - senha
+     reset- limpar
+     submit - botão
+     required- obrigatorio (SEMPRE QUE FOR UM VALOR OBRIGATORIO DENTRO DO SEU FORMULARIO)
+
+
+     minlength="" - minhimo de letra obrigatorio
+
+     maxlength="" - maximo de letras obigatorio
+
+     placeholder - o nome que fica na caixa 
+     indicado o que é pra escrever.
+
+     nunber - input que aceita só numero.
+
+     step - indica de quanto em quanto o numero é valido.
+
+     month - calendario
+
+     date - data
+
+     time - hora
+
+     tel- telefone
+
+     pattern - padrão {expreção regular} -> vc so vai poder adicionar o valor padrão exigido pelo (pattern ) ex: 
+     pattern="^d\{4,5}-d\{5}$"
+     
+==========================================================================
+
+    fieldset - cria uma caixa que agrupa todo o formulario 
+    legend - cria o nome de uma legenda na caixa
+
+
+    ===checkbox - caixa de marcação ===
+    ==radio - é uma bolinha de marcação ´para escolher o sexo, mais para funcionar é preciso ter o mesmo "name"====
+
+    ====checked - marcado, ou seja ( sua caixa ja vem marcado em uma das opções )
+
+    ====color- cria uma paleta de cores====
+    range  - cria uma faixa pra vc escolher o novel que quer.
+
+    ======PROPIEDADE SELECT===========
+     SELECT -É uma propiedade onde vc pode criar um campo de seleção que permite escolher opções.
+
+     OPTGROUP - Separa seu "Select" em subgrupos e dentro desse optgroup tem o "OPTION" que é o valor que vc vai colocar para ser selecionado n o seu select..
+
+     datalist  == vc pode escolher selecionar ou escrever a opção desejada, coisa que o "select" não permite,e o "data list " funciona co o input
+
+     EX::
+      INP
