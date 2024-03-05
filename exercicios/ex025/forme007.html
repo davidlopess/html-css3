@@ -7,7 +7,7 @@
     <h1>
         estudando formulario
     </h1>
-    <form action="cadastro.html">
+    <form action="cadastro.html" method="post">
         <label for="e-estado"> Selecione seu estado</label>
         <select name="estado" id="e-estado">
             <optgroup label="Região Norte">
@@ -24,16 +24,23 @@
        <div>
             <label for="e-prof">Profição</label>
             <input type="text" name="prof" id="e-prof" list="listprof">
-            <datalist id="listprof">
-               
+            <datalist id="listprof">              
                     <option >Professor</option>
                     <option >Professor</option>
                     <option >Professor</option>
-                    <option >Professor</option>
-                
-
-
+                    <option>Professor<option>           
             </datalist>
+        </div>
+
+        <div>
+            <label for="e-reso"> Escreva seu resumo</label> 
+            <br>
+            <textarea name="resumo" id="e-reso" cols="30" rows="20" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
         </div>
     </form>
 </head>
