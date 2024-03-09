@@ -13,6 +13,8 @@ body{
     height: 100vh;
 }
 
+
+
 header{
     background-color: rgba(149, 149, 149, 0.764);
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.367);  
@@ -24,31 +26,36 @@ header h1{
     padding-top: 20px;
 }
 
-header ul{
+header .menu{
+    display: none;
+}
+
+
+header menu ul{
     display: flex;
     list-style: none;
     margin-top: 10px;
 }
 
-header ul li{
+header menu ul li{
     padding:7px;
    margin-right: 5px;
    background-color: rgb(82, 82, 82);
    border-radius: 2px;
 }
 
-header ul li:hover{
+header menu ul li:hover{
     cursor: pointer;
 }
 
-header ul li a{
+header menu ul li a{
     color: white;
     text-decoration: none;
 }
 
 main{
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 60%;
    
     margin: auto;
     margin-top: 20px;
@@ -63,9 +70,11 @@ main h2{
 
 article{
     padding: 15px;
+    
 }
 
 article p{
     text-indent:1rem;
-    
+    text-align: justify;
+    text-rendering: geometricPrecision;
 }

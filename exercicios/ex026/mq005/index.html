@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com media</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilo/responsive.css">
 </head>
 <body>
+    
+   
     <header>
         <h1>Meu Site</h1>
 
-        <menu>
+        <div class="menu" onclick="clickMenu()">
+            <img src="imagens/list.svg" alt=""> 
+        </div>
+
+        <menu id="nav">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -43,6 +50,18 @@
 
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if (nav.style.display == 'block') {
+                  nav.style.display = 'none'  
+            }else{
+                nav.style.display = 'block'
+            }
+             
+
+        }
+    </script>
     
 </body>
 </html>
